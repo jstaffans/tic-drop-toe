@@ -1,8 +1,8 @@
-package fi.bitrite.ticakkatoe.resources;
+package fi.bitrite.ticdroptoe.resources;
 
 import com.yammer.metrics.annotation.Timed;
-import fi.bitrite.ticakkatoe.core.Board;
-import fi.bitrite.ticakkatoe.core.Turn;
+import fi.bitrite.ticdroptoe.core.Board;
+import fi.bitrite.ticdroptoe.core.Turn;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

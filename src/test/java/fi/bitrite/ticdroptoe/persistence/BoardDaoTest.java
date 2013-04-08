@@ -1,6 +1,6 @@
-package fi.bitrite.ticakkatoe.persistence;
+package fi.bitrite.ticdroptoe.persistence;
 
-import fi.bitrite.ticakkatoe.core.Board;
+import fi.bitrite.ticdroptoe.core.Board;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,7 @@
-package fi.bitrite.ticakkatoe.persistence;
+package fi.bitrite.ticdroptoe.persistence;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fi.bitrite.ticakkatoe.core.Board;
+import fi.bitrite.ticdroptoe.core.Board;
 import lombok.extern.slf4j.Slf4j;
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.tweak.ResultSetMapper;

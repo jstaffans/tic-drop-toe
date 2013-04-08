@@ -1,4 +1,4 @@
-package fi.bitrite.ticakkatoe;
+package fi.bitrite.ticdroptoe;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.yammer.dropwizard.config.Configuration;

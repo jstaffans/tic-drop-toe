@@ -1,4 +1,4 @@
-package fi.bitrite.ticakkatoe.core;
+package fi.bitrite.ticdroptoe.core;
 
 import lombok.Data;
 

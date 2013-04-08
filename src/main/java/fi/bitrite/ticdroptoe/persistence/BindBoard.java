@@ -1,8 +1,8 @@
-package fi.bitrite.ticakkatoe.persistence;
+package fi.bitrite.ticdroptoe.persistence;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fi.bitrite.ticakkatoe.core.Board;
+import fi.bitrite.ticdroptoe.core.Board;
 import org.skife.jdbi.v2.SQLStatement;
 import org.skife.jdbi.v2.sqlobject.Binder;
 import org.skife.jdbi.v2.sqlobject.BinderFactory;

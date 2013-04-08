@@ -1,6 +1,6 @@
-package fi.bitrite.ticakkatoe.persistence;
+package fi.bitrite.ticdroptoe.persistence;
 
-import fi.bitrite.ticakkatoe.core.Board;
+import fi.bitrite.ticdroptoe.core.Board;
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.SqlUpdate;

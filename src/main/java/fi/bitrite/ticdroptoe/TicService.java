@@ -1,11 +1,11 @@
-package fi.bitrite.ticakkatoe;
+package fi.bitrite.ticdroptoe;
 
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
 import com.yammer.dropwizard.config.FilterBuilder;
 import com.yammer.dropwizard.jdbi.DBIFactory;
-import fi.bitrite.ticakkatoe.resources.BoardResource;
+import fi.bitrite.ticdroptoe.resources.BoardResource;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 import org.skife.jdbi.v2.DBI;
 
@@ -16,7 +16,7 @@ public class TicService extends Service<TicConfiguration> {
 
     @Override
     public void initialize(Bootstrap<TicConfiguration> bootstrap) {
-        bootstrap.setName("tic-akka-toe");
+        bootstrap.setName("tic-drop-toe");
     }
 
     @Override
