@@ -1,9 +1,16 @@
 package fi.bitrite.ticdroptoe.core;
 
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Slf4j
 public class Board {
 
     public static final int SIZE = 3;
@@ -14,18 +21,11 @@ public class Board {
         return new Board(id, markers);
     }
 
-    @Getter
-    private final int id;
-
-    @Getter
-    private final Character[] markers;
-
-    public Board(int id, Character[] markers) {
-        this.markers = markers;
-        this.id = id;
-    }
+    private int id;
+    private Character[] markers;
 
     public void setMarker(int x, int y, char marker) {
         markers[y*SIZE + x] = marker;
     }
+
 }

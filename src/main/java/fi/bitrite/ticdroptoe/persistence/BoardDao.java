@@ -20,4 +20,8 @@ public interface BoardDao {
 
     @SqlUpdate("update board set markers = :markers where id = :id")
     void update(@BindBoard Board b);
+
+    @SqlQuery("select id, markers from board order by id desc limit 1")
+    @Mapper(BoardMapper.class)
+    Board findLatest();
 }

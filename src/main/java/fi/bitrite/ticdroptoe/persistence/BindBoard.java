@@ -14,12 +14,9 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.PARAMETER})public @interface BindBoard {
     public static class BoardBinderFactory implements BinderFactory {
-        public Binder build(Annotation annotation)
-        {
-            return new Binder<BindBoard, Board>()
-            {
-                public void bind(SQLStatement q, BindBoard bind, Board arg)
-                {
+        public Binder build(Annotation annotation) {
+            return new Binder<BindBoard, Board>() {
+                public void bind(SQLStatement q, BindBoard bind, Board arg) {
                     try {
                         ObjectMapper mapper = new ObjectMapper();
                         q.bind("id", arg.getId());

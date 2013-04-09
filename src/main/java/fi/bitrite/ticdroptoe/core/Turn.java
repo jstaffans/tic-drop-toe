@@ -1,11 +1,15 @@
 package fi.bitrite.ticdroptoe.core;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Turn {
 
-    private final Long turn;
-    private final Board board;
+    private Long turn;
+    private Board board;
 
 }

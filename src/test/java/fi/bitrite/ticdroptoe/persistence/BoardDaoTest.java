@@ -10,6 +10,7 @@ import org.skife.jdbi.v2.Handle;
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 public class BoardDaoTest {
@@ -28,6 +29,20 @@ public class BoardDaoTest {
     @After
     public void destroyTable() {
         h.close();
+    }
+
+    @Test
+    public void nullIsReturnedWhenNoBoardsExist() {
+        Board board = dao.findLatest();
+        assertNull(board);
+    }
+
+    @Test
+    public void canGetLatestBoard() {
+        dao.insert(Board.createDefaultBoard(1));
+        dao.insert(Board.createDefaultBoard(2));
+        Board board = dao.findLatest();
+        assertEquals(2, board.getId());
     }
 
     @Test
